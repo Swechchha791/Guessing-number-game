@@ -1,0 +1,92 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-weight: bolder;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background: #253f48;
+    color: #fff;
+    transition: all 1s linear;
+}
+.btn{
+    height: 2.5rem;
+    width: 6rem;
+    font-size: large;
+    transition: all .3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.top_content{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+.guessing_no h1{
+    text-align: center;
+    margin: 3rem 0;
+    position: relative;
+} 
+.hr_line{
+    height: 5px;
+    background: #fff;
+    position: relative;
+}
+.random_no{
+    margin-left: 46%;
+    margin-top: -2.2rem;
+    height: 4rem;
+    width: 5rem;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    z-index: 1;
+    position: absolute;
+    transition: all 1s linear;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    align-items: center;
+}
+.guess{
+    height: 4rem;
+    width: 14rem;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0 4rem;
+    background-color: rgba(34, 34, 34, 0.636);
+    border: 2px solid #fff;
+}
+.check{
+    margin: 1.5rem 0 0 6rem;
+}
+.message{
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.label-score{
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 7rem;
+        align-items: center;
+    }
+    .message{
+        padding: 2rem 0;
+    }
+  }
